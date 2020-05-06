@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Bookmarks</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <main class = "js-bookmarks bookmarks">
+      <h1>My bookmarks</h1>
+      <form class = "js-toolbar toolbar">
+        <input type="submit" id="add-bookmark" value ="Add Bookmark">
+        <label for="min-rating"></label>
+        <select class = "js-min-rating min-rating">
+          <option value="0">Minimum Rating</option>
+          <option value="5">5 stars</option>
+          <option value="4">4 stars</option>
+          <option value="3">3 stars</option>
+          <option value="2">2 stars</option>
+        </select>
+      </form>
+      <div class = "js-bookmark bookmark"><h2 class = "js-title title">How Felines Domesticated the Human Race</h2>
+        <div class = "rating js-rating">★★★★☆</div>
+        </div>
+      </div>
+      <div class = "js-bookmark bookmark"><span class = "js-title title">SFW</span>
+        <div class = "rating js-rating">★★★☆☆</div>
+      </div>
+      <div class = "js-bookmark bookmark"><span class = "js-title title">Top 5 clickbait articles of 2020</span>
+        <div class = "rating js-rating">★★★★★</div>
+      </div>
+    </main>
+  </header>
+  <main></main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

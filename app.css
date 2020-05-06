@@ -1,8 +1,175 @@
 /* Your styles should be mobile-first and responsive */
+main {
+  /* background-color: rgba(127, 225, 255, 0.329); */
+  
+}
+.bookmarks {
+  background-color: #ACECFF;  
+  /* background-color: rgb(252, 252, 252); */
+  padding: 8.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
 
+.content {
+  margin-top: .2rem;
+  margin-left: -.2rem;
+}
+
+h1 {
+  margin-left: 8.33%;
+  /* margin-right: 15%; */
+  /* text-align: center; */
+}
 /** 
-  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
-  *
-  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
-  *
+* If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+*
+* https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+*
 */
+
+.bookmark {
+  border-right: solid rgba(0, 0, 0, 0.514) 2px;
+  border-bottom: solid rgba(0, 0, 0, 0.514) 3px;
+  border-left: solid rgb(253, 228, 189) 2px;
+  /* border-left: solid rgba(0, 0, 0, 0.514) 0px; */
+  /* border-top: none; */
+  margin: .25em;
+  border-radius: 5px 5px;
+  /* border: solid rgba(0, 0, 0, 0.514) 2px; */
+  width: 83.33%;
+  padding: .3em 0 .3em 0;
+  background-color: #FDD18F;
+  margin-left:-.2em;
+}
+.visit , .rating {
+  position: sticky;
+}
+.site-description {
+  max-height: 6.5em;
+  overflow: scroll;
+}
+/* .bookmark, .expanded {
+  display:flex;
+  flex-flow: row wrap;
+} */
+
+
+.bookmark > span , p , .visit{
+  margin-left: 3.5%;
+}
+
+
+
+.toolbar {
+  width: 83.33%;
+  display: flex;
+  margin-bottom: .5em;
+}
+
+#add-bookmark , .min-rating {
+  /* margin-right: 2em; */
+  background-color: rgb(36, 107, 199);  
+  border-left:solid orange 2px;
+  border-top:solid orange 2px;
+  border-right: solid darkblue 2px;
+  border-bottom: solid darkblue 2px;
+  color: orange;
+}
+.rating .expanded {
+  border: none;
+}
+.rating {
+  /* background-color: rgb(248, 248, 248); */
+  padding-left: .5em;
+  /* border-top: rgba(0, 0, 0, 0.493) solid 2px; */
+  margin-bottom: 0;
+
+}
+.visit {
+  margin-top:.1em;
+  width: 65%;
+  background-color: rgba(255, 145, 0, 0.178);
+  border-left: solid 1px rgb(248, 246, 237);
+  border-top: solid 1px rgb(248, 246, 237);
+  border-right: solid 1px rgb(153, 144, 131);
+  border-bottom: solid 1px rgb(153, 144, 131);
+  /* margin-top: .5em; */
+}
+
+.trash {
+  width: 1.2rem;
+  height: 1.2rem;
+  /* margin-right: 3.5%; */
+  text-align: right;
+}
+
+#add-bookmark {
+  width: 60%;
+}
+.entry {
+  color: rgb(243, 243, 33);
+  max-height: 1.3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  margin-top: -.6em;
+  margin-left:-.14em;
+  border-left: solid rgb(250, 174, 225) 2px;
+  border-top: solid rgb(250, 174, 225) 2px;
+  border-radius: 5px 5px 0 0;
+  /* border: solid rgba(0, 0, 0, 0.514) 2px; */
+  background-color: rgb(255, 0, 170);
+  
+}
+
+.title {
+  font-size: 1rem;
+  /* margin-left: 3.5%; */
+  width: 87%;
+  margin-top: .25rem;
+  margin-bottom: .3rem;
+  padding-left: 3.5%;
+  overflow: hidden;
+  max-height: 1em;
+  
+}
+.min-rating {
+  width: 60%;
+  position: relative;
+  /* left: 2px; */
+}
+
+#add-bookmark {
+  margin-right: 0%;
+}
+
+.site-description {
+  color: rgb(238, 253, 32);
+  background-color: rgba(116, 137, 255, 0.747);
+  border: solid 1px rgb(153, 144, 131);
+  border-right: solid 1px rgb(248, 246, 237);
+  border-bottom: solid 1px rgb(248, 246, 237);
+  border-left: solid 1px rgb(153, 144, 131);
+  border-top: solid 1px rgb(153, 144, 131);
+  margin: 3.45%;
+}
+
+.form-create {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: space-between;
+}
+.site-name {
+  width:99%;
+}
+.rating-form > input {
+  width: 19.9%;
+}
+.cancel , .create {
+  width: 49.6%;
+}
+
+
